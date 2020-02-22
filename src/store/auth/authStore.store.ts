@@ -1,4 +1,4 @@
-import * as Reflux from "Reflux";
+import * as Reflux from "reflux";
 import { AuthActions } from "./authActions.actions";
 import { IAuthStore } from "./authStore.interface";
 
