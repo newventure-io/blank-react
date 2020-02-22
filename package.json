@@ -1,0 +1,55 @@
+{
+  "name": "blank-react",
+  "version": "1.0.0",
+  "description": "blank-react",
+  "main": "index.js",
+  "dependencies": {
+    "@types/bootstrap": "^4.3.0",
+    "@types/history": "^4.7.2",
+    "@types/node": "^11.11.0",
+    "@types/react": "^16.8.7",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/reflect-metadata": "^0.1.0",
+    "@types/reflux": "^6.4.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "bootstrap": "^4.3.1",
+    "css-loader": "^3.4.2",
+    "history": "^4.7.2",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-loading": "^2.0.3",
+    "react-router-dom": "^4.3.1",
+    "reflect-metadata": "^0.1.13",
+    "reflux": "^6.4.1",
+    "sass-loader": "^7.1.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "tslint": "^5.13.1",
+    "typescript": "^3.3.3333",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "scripts": {
+    "build": "npx webpack --config webpack.config.js",
+    "start": "./node_modules/.bin/webpack-dev-server --port 8080 --host 0.0.0.0",
+    "lint": "yarn tslint && yarn typecheck",
+    "tslint": "./node_modules/.bin/tslint --project ./tsconfig.json",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "test": "echo no tests yet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newventure-io/blank-react.git"
+  },
+  "author": "newventure.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newventure-io/blank-react/issues"
+  },
+  "homepage": "https://github.com/newventure-io/blank-react#readme"
+}
