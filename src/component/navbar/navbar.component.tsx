@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ReactNode } from "react";
-import { NavLink, Switch, BrowserRouter } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "../../styles/main.scss";
 

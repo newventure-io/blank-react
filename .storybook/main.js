@@ -17,8 +17,6 @@ module.exports = {
       tls: "empty",
     };
 
-    console.log(config.module.rules);
-
     config.module.rules.push({
       test: /\.scss$/,
       use: [
@@ -26,19 +24,6 @@ module.exports = {
         "css-loader",
         "sass-loader"
       ]
-    });
-
-    config.module.rules.push({
-      test: /\.css$/,
-      use: [
-        "style-loader",
-        "css-loader"
-      ]
-    });
-
-    config.module.rules.push({
-      test: /\.tsx?$/,
-      loader: ["awesome-typescript-loader", "react-docgen-typescript-loader"],
     });
 
     config.module.rules.push({

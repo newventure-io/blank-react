@@ -1,4 +1,5 @@
 import * as React from "react";
+import { BrowserRouter } from "react-router-dom";
 import { storiesOf } from "@storybook/react";
 import {
   withKnobs,
@@ -16,6 +17,12 @@ stories.add("Default", () => {
   const content = text("Content", "Content");
 
   return (
-    <Page>{content}</Page>
+    <BrowserRouter>
+      <Page>
+        <div style={{
+          whiteSpace: "pre-line"
+        }}>{content}</div>
+      </Page>
+    </BrowserRouter>
   );
 });
