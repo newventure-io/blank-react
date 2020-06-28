@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ReactNode } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import "../styles/main.scss";
 
@@ -14,7 +14,7 @@ export class MainView extends AppComponent {
         <Switch>
           <Route path="/" exact render={() => <Page>Index</Page>} />
           <Route path="/page2" exact render={() => <Page>Page2</Page>} />
-          <Route render={() => `404`} />
+          <Redirect to="/" />
         </Switch>
       </BrowserRouter>
     );
