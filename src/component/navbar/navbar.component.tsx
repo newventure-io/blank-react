@@ -9,14 +9,10 @@ import { AppComponent } from "../appComponent/appComponent.component";
 export class Navbar extends AppComponent {
   public render(): ReactNode {
     return (
-      <BrowserRouter>
-        <Switch>
-          <nav className="nav">
-            <NavLink to="/" exact className="nav-link" activeClassName="active">Index</NavLink>
-            <NavLink to="/page2" exact className="nav-link" activeClassName="active">Page2</NavLink>
-          </nav>
-        </Switch>
-      </BrowserRouter>
+      <nav className="nav">
+        <NavLink to="/" exact className="nav-link" activeClassName="active">Index</NavLink>
+        <NavLink to="/page2" exact className="nav-link" activeClassName="active">Page2</NavLink>
+      </nav>
     );
   }
 }
