@@ -4,7 +4,6 @@
   "description": "blank-react",
   "main": "index.js",
   "dependencies": {
-    "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-backgrounds": "^5.3.19",
     "@storybook/addon-docs": "^5.3.19",

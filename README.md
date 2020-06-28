@@ -37,6 +37,3 @@ Storybook Viewport Addon allows your stories to be displayed in different sizes 
 
 #### [@storybook/addon-backgrounds](https://github.com/storybookjs/storybook/tree/master/addons/backgrounds)
 Storybook Background Addon can be used to change background colors inside the preview in Storybook.
-
-#### [@storybook/addon-a11y](https://github.com/storybookjs/storybook/tree/master/addons/a11y)
-This storybook addon can be helpful to make your UI components more accessible.
