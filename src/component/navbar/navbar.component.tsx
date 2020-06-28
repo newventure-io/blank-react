@@ -6,12 +6,27 @@ import "../../styles/main.scss";
 
 import { AppComponent } from "../appComponent/appComponent.component";
 
-export class Navbar extends AppComponent {
+export interface INavbarProps {
+  linkOnClick?: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
+}
+
+export class Navbar extends AppComponent<INavbarProps> {
   public render(): ReactNode {
     return (
       <nav className="nav">
-        <NavLink to="/" exact className="nav-link" activeClassName="active">Index</NavLink>
-        <NavLink to="/page2" exact className="nav-link" activeClassName="active">Page2</NavLink>
+        <NavLink
+          to="/"
+          exact
+          className="nav-link"
+          activeClassName="active"
+          onClick={this.props.linkOnClick?.bind(this)}>Index</NavLink>
+
+        <NavLink
+          to="/page2"
+          exact
+          className="nav-link"
+          activeClassName="active"
+          onClick={this.props.linkOnClick?.bind(this)}>Page2</NavLink>
       </nav>
     );
   }

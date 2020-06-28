@@ -34,6 +34,3 @@ Storybook Docs transforms your Storybook stories into world-class component docu
 
 #### [@storybook/addon-viewport](https://github.com/storybookjs/storybook/tree/master/addons/viewport)
 Storybook Viewport Addon allows your stories to be displayed in different sizes and layouts in Storybook. This helps build responsive components inside of Storybook.
-
-#### [@storybook/addon-backgrounds](https://github.com/storybookjs/storybook/tree/master/addons/backgrounds)
-Storybook Background Addon can be used to change background colors inside the preview in Storybook.
