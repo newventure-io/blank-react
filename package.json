@@ -43,6 +43,8 @@
     "webpack-dev-server": "^4.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "npx webpack --config webpack.config.js",
     "start": "./node_modules/.bin/webpack-dev-server --port 8080 --host 0.0.0.0 --mode development",
     "storybook": "start-storybook -p 9009",
@@ -60,5 +62,8 @@
   "bugs": {
     "url": "https://github.com/newventure-io/blank-react/issues"
   },
-  "homepage": "https://github.com/newventure-io/blank-react#readme"
+  "homepage": "https://github.com/newventure-io/blank-react#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
